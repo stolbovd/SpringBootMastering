@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ru.inkontext.SpringBootMasteringApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.216 s <<< FAILURE! - in ru.inkontext.SpringBootMasteringApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'task' defined in class path resource [ru/inkontext/config/StarterConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ru.inkontext.aop.TaskAspect]: Factory method 'task' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'task': Requested bean is currently in creation: Is there an unresolvable circular reference?
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ru.inkontext.aop.TaskAspect]: Factory method 'task' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'task': Requested bean is currently in creation: Is there an unresolvable circular reference?
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'task': Requested bean is currently in creation: Is there an unresolvable circular reference?
+
