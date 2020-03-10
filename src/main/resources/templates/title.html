@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="ru">
+<head>
+	<th:block th:fragment="head_fr(titleParam)">
+		<meta charset="UTF-8">
+		<title th:text="${'Title is layout param: '+(titleParam==_?'Is not param: ':titleParam)}">
+		</title>
+	</th:block>
+</head>
+<body>
+<div th:fragment="body_fr(titleParam)">
+	<h1>Hello world</h1>
+	<th:block th:if="${titleParam} != _">
+		<h2 th:text="${titleParam}"></h2>
+	</th:block>
+</div>
+</body>
+</html>

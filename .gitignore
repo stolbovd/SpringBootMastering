@@ -30,13 +30,10 @@ src/main/java/.DS_Store
 src/main/java/ru/.DS_Store
 src/main/java/ru/inkontext/.DS_Store
 src/main/resources/.DS_Store
-src/main/resources/static/
-src/main/resources/templates/
 src/test/.DS_Store
 src/test/java/.DS_Store
 src/test/java/ru/.DS_Store
 src/test/java/ru/inkontext/.DS_Store
-target/classes/application.yml
-target/generated-sources/
-target/generated-test-sources/
 !/persons/
+/target/
+/.idea/
